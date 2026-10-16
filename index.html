@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o seu Perfil Psicológico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .campo-dados, .pergunta {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .opcao {
+            font-weight: normal;
+            display: inline;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Implementação da Cláusula de Baixa Visibilidade (Dark Pattern) */
+        .termos-velados {
+            font-size: 8px; /* Tamanho de fonte reduzido conforme instruções */
+            color: #b3b3b3; /* Contraste reduzido */
+            margin-top: 30px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Descubra o seu Perfil Psicológico</h1>
+    
+    <form action="#" method="get">
+        <!-- Campos de entrada de dados -->
+        <div class="campo-dados">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email" style="margin-top: 10px;">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="data_nascimento" style="margin-top: 10px;">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+        </div>
+
+        <!-- 3 Perguntas de múltipla escolha -->
+        <div class="pergunta">
+            <label>1. Num evento social com muitas pessoas que não conhece, você costuma:</label>
+            <input type="radio" id="p1_a" name="p1" value="A"><label for="p1_a" class="opcao"> Iniciar conversas ativamente.</label><br>
+            <input type="radio" id="p1_b" name="p1" value="B"><label for="p1_b" class="opcao"> Ficar no seu canto e observar.</label><br>
+            <input type="radio" id="p1_c" name="p1" value="C"><label for="p1_c" class="opcao"> Falar apenas com quem já conhece.</label>
+        </div>
+
+        <div class="pergunta">
+            <label>2. Ao tomar uma decisão importante, você baseia-se mais em:</label>
+            <input type="radio" id="p2_a" name="p2" value="A"><label for="p2_a" class="opcao"> Lógica e factos concretos.</label><br>
+            <input type="radio" id="p2_b" name="p2" value="B"><label for="p2_b" class="opcao"> Intuição e sentimentos.</label><br>
+            <input type="radio" id="p2_c" name="p2" value="C"><label for="p2_c" class="opcao"> Conselhos de amigos e familiares.</label>
+        </div>
+
+        <div class="pergunta">
+            <label>3. Como costuma organizar o seu dia a dia?</label>
+            <input type="radio" id="p3_a" name="p3" value="A"><label for="p3_a" class="opcao"> Planeio tudo detalhadamente.</label><br>
+            <input type="radio" id="p3_b" name="p3" value="B"><label for="p3_b" class="opcao"> Deixo as coisas fluírem naturalmente.</label><br>
+            <input type="radio" id="p3_c" name="p3" value="C"><label for="p3_c" class="opcao"> Faço apenas uma lista mental das tarefas.</label>
+        </div>
+
+        <!-- Botão de submissão -->
+        <button type="submit">Ver Resultado</button>
+
+        <!-- Mecanismo de Consentimento Velado -->
+        <div class="termos-velados">
+            <input type="checkbox" id="termos" name="termos" checked>
+            <label for="termos" class="opcao">Concordo com os Termos de Uso e Política de Privacidade. Ao prosseguir, autorizo a recolha, partilha com terceiros e tratamento abrangente dos meus dados pessoais introduzidos neste formulário para fins de perfilagem comercial, sem necessidade de aviso prévio.</label>
+        </div>
+    </form>
+
+</body>
+</html>
